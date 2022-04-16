@@ -234,7 +234,7 @@ function parseResult(result, mode, username, profileID, ranked) {
 		let winPercent = player.win_rate;
 		if(ranked == RANKED) {
 			let league = player.rank_level.split("_");
-			leagueString = capitalizeWord(league[0]) + " " + (4 - parseInt(league[1]));
+			leagueString = capitalizeWord(league[0]) + " " + league[1];
 		}
 		return {
 			name,
